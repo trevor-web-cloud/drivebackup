@@ -15,7 +15,7 @@
 <ul>
 <li>本 App 透過 Google OAuth 2.0（PKCE）取得授權，僅使用 <code>https://www.googleapis.com/auth/drive.file</code> 權限範圍，只能存取本 App 建立或開啟的檔案與資料夾。</li>
 <li>您指定資料夾內的檔案，會直接從您的裝置上傳到您自己的 Google Drive 帳號，不經過任何中介伺服器。</li>
-<li>授權憑證（access token / refresh token）僅儲存在您裝置的 App 私有儲存空間，用於背景自動同步；您可以隨時在 Google 帳號的「第三方存取權」設定中撤銷授權，撤銷後憑證即失效。</li>
+<li>授權憑證（access token / refresh token）僅儲存在您裝置的 App 私有儲存空間，並以 Android Keystore 金鑰加密保護，用於背景自動同步；您可以隨時在 Google 帳號的「第三方存取權」設定中撤銷授權，撤銷後憑證即失效。</li>
 </ul>
 <h2>本機資料</h2>
 <p>同步狀態紀錄（檔案大小、修改時間、MD5 與對應的 Drive 檔案 ID）僅儲存在您的裝置上，解除安裝 App 即一併刪除。</p>
