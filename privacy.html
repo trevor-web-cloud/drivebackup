@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DriveBackup 隱私權政策</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.7;color:#222}h1{font-size:26px}</style>
+</head>
+<body>
+<h1>DriveBackup 隱私權政策</h1>
+<p>最後更新：2026-11-23</p>
+<h2>資料處理方式</h2>
+<p>DriveBackup（以下稱「本 App」）是一款在使用者裝置上運行的個人備份工具，沒有自有伺服器，不蒐集、不上傳、不分享任何資料給開發者或第三方。</p>
+<h2>Google Drive 存取</h2>
+<ul>
+<li>本 App 透過 Google OAuth 2.0（PKCE）取得授權，僅使用 <code>https://www.googleapis.com/auth/drive.file</code> 權限範圍，只能存取本 App 建立或開啟的檔案與資料夾。</li>
+<li>您指定資料夾內的檔案，會直接從您的裝置上傳到您自己的 Google Drive 帳號，不經過任何中介伺服器。</li>
+<li>授權憑證（access token / refresh token）僅儲存在您裝置的 App 私有儲存空間，用於背景自動同步；您可以隨時在 Google 帳號的「第三方存取權」設定中撤銷授權，撤銷後憑證即失效。</li>
+</ul>
+<h2>本機資料</h2>
+<p>同步狀態紀錄（檔案大小、修改時間、MD5 與對應的 Drive 檔案 ID）僅儲存在您的裝置上，解除安裝 App 即一併刪除。</p>
+<h2>資料分享</h2>
+<p>本 App 不含分析、廣告或追蹤 SDK，不會將任何資料傳送給開發者或任何第三方。</p>
+<h2>聯絡方式</h2>
+<p>如有疑問，請透過本專案 GitHub 儲存庫的 Issues 頁面聯絡。</p>
+</body>
+</html>
